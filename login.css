@@ -1,0 +1,46 @@
+
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+.body  
+{  
+    margin: 0;  
+    padding: 0x;  
+    font-family: 'Arial';
+    
+} 
+
+.form {
+    width: 380px;
+    overflow: hidden;  
+    margin: 20 0 0 450px;
+    padding: 50px;
+    border-radius: 15px ; 
+    margin: auto;
+}
+.form-group{  
+    color: #08ffd1;  
+    font-size: 17px;  
+} 
+
+.from-group input{
+    border: none;
+    
+}
+.form-control {
+    width: 250px;
+}
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+    width: 380px;
+    margin: auto;
+
+}
+.btn-twitter {
+    width: 380px;
+    background-color: #42AEEC;
+    color: #fff;
+  
+    margin: auto;  
+}
+
+
