@@ -26,6 +26,18 @@ header('location:login.php');
           <li> <a href="" class=""> about</a></li>
           <li> <a href="" class=""> serves</a></li>
           <li> <a href="" class=""> gallary</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More</a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-header">onilne education</li>
+              <li> <a href="" class="dropdown-item"> what is online education</a></li>
+              <li> <a href="" class="dropdown-item"> Advantages/Disadvantages</a></li>
+              <li> <a href="" class="dropdown-item"> platfoems</a></li>
+              <li> <a href="" class="dropdown-item"> videos</a></li>
+
+              </ul>
+          </li>
+
         </ul>
       </div>
 

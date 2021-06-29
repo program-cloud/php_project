@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ccc;
+    background-image: url("images/123.jpg");
     }
     ul{
     position: absolute;
@@ -141,4 +142,23 @@ body{
             ul li:hover:nth-child(7) a:after{
             background: #b1c02d;
             }
+            .logo img{
+                width: 330px;
+                position: absolute;
+                top: 0%;
+                left: 40%;
+            }
+            img:hover{
+            border: 3px solid gray;
+            }
+            .title h1{
+                font-weight: 500;
+                font-size: 60px;
+                position: absolute;
+                left: 0%;
+                top: 30px;
+                color: gray;
+
+            }
+            
                 
