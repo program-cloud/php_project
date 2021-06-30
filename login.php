@@ -30,7 +30,8 @@ if(!isset($_SESSION['username'])){
                     <div class="form-group input-group">
                         <div class="input-group-prepend">       
                             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="email" required>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="email" required
+                            value="<?php if(isset($_COOKIE['emailcookie'])){echo $_COOKIE['emailcookie'];} ?>">
                         
                         </div>
                     </div>
@@ -38,10 +39,15 @@ if(!isset($_SESSION['username'])){
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                            <input type="password" id="password" name="password" class="form-control" placeholder="password" required>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="password" required
+                            value="<?php if(isset($_COOKIE['passwordcookie'])){echo $_COOKIE['passwordcookie'];} ?>">
                         
                         </div>
                     </div>
+                    <div class="form-group text-dark">       
+                 <input type="checkbox"  name="remember" >Remember
+                        </div>
+                    
                     <br>
                     <a href="#"> <button type="submit"  name="submit"  class="btn btn-primary" value="Submit">
                     login
@@ -83,8 +89,22 @@ if(isset($_POST['submit'])){
             if($pass_decode){
                 ?>
                 <script>alert("login succusful");</script>
+                <?php
+                if(isset($_POST['remember'])){
+                    setcookie('emailcookie',$email,time()+86400);
+                    setcookie('passwordcookie',$password,time()+86400);
+                
+
+                ?>
                 <script> location.replace("home.php");</script>
                 <?php
+                }
+                else{
+                    ?>
+                    <script> location.replace("home.php");</script>
+                    <?php
+                    }
+
             }
             else{
                 ?>
