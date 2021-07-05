@@ -67,6 +67,7 @@ nav{
     font-size: 500;
     font-style: 14px;
     text-transform: capitalize;
+    color: white;
 }
 .logout_btn a:hover{
     background: linear-gradient(to bottom,#615cfd 0%,#d456ef);
@@ -114,7 +115,8 @@ nav{
     font-size: 20px;
     border-radius: 50%;
     justify-content: center; 
-    margin: 20px 0; 
+    margin: 20px 0;
+    color: blue; 
 
 }
 .icons-item :hover{
