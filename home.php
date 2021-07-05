@@ -22,9 +22,9 @@ header('location:login.php');
     </div>
       <div class="menu">
         <ul>
-          <li> <a href="" class="active"> home</a></li>
-          <li> <a href="" class=""> about</a></li>
-          <li> <a href="" class=""> serves</a></li>
+          <li> <a href="home.php" class="active"> home</a></li>
+          <li> <a href="contact.php" class=""> Contact</a></li>
+          <li> <a href="feature.php" class=""> Feature</a></li>
           <li> <a href="" class=""> gallary</a></li>
           <li class="nav-item dropdown">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">More</a>
